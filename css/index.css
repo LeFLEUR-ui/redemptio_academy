@@ -1,0 +1,137 @@
+:root {
+    --bs-body-bg: #f5f7fa; 
+    --bs-body-font-family: 'Inter', sans-serif;
+    --border-color: #e9ecef;
+}
+
+/* Essential CSS to make the body take up the full viewport height and enable flexbox centering */
+html, body {
+    height: 100%; /* Make sure both html and body take full height */
+}
+
+body {
+    background-color: var(--bs-body-bg);
+    color: #344767;
+}
+
+/* --- Card & Table Styles --- */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border-radius: 0.75rem;
+}
+
+.table > :not(caption) > * > * {
+    padding: 1rem 1rem;
+    border-bottom-color: var(--border-color);
+}
+
+.table thead th {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    color: #8392ab;
+    background-color: #fff;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.badge-soft {
+    background-color: #e9ecef;
+    color: #495057;
+    font-weight: 500;
+    padding: 0.4em 0.8em;
+    border-radius: 6px;
+}
+
+/* Input Styling */
+.grade-input {
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-weight: 500;
+    color: #344767;
+    background-color: #f8f9fa;
+    min-width: 50px;
+}
+
+.grade-input:focus {
+    background-color: #fff;
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+/* Hide Arrows in Number Input */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+/* Dynamic Column Headers */
+.header-midterms {
+    border-top: 3px solid #0d6efd;
+    background-color: #f8faff !important;
+    color: #0d6efd !important;
+}
+
+.header-finals {
+    border-top: 3px solid #198754;
+    background-color: #f4fcf7 !important;
+    color: #198754 !important;
+}
+
+.final-grade-col {
+    background-color: #f8f9fa;
+}
+
+/* --- Modal Styles --- */
+.modal-content {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header { border-bottom: none; padding-bottom: 0; }
+
+.setting-box {
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.setting-box-midterm {
+    background-color: #f0f7ff; 
+    border: 1px solid #cfe2ff;
+}
+
+.setting-box-finals {
+    background-color: #f0fff4; 
+    border: 1px solid #d1e7dd;
+}
+
+.setting-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #495057;
+}
+
+.setting-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.table-responsive::-webkit-scrollbar {
+    width: 6px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 3px;
+}
+
+.modal-content {
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}

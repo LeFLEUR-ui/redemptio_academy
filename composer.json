@@ -1,0 +1,6 @@
+{
+    "require": {
+        "phpoffice/phpspreadsheet": "^5.3",
+        "rafaelwendel/phpsupabase": "^0.0.11"
+    }
+}
