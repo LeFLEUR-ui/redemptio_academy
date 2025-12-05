@@ -12,7 +12,7 @@
 
 <div class="card mb-5">     
     <div class="table-responsive" style="max-height: 280px; overflow-y: auto;">
-        <table class="table table-hover align-middle mb-0">
+        <table id="subjectTable" class="table table-hover align-middle mb-0">
             <thead>
                 <tr>
                     <th scope="col" class="ps-4">Year</th>
